@@ -1,0 +1,207 @@
+[
+    {
+      "id": 1,
+      "name": "Boxing Glovecs",
+      "category": "Sports Equipment",
+      "price": 59.99,
+      "description": "Take your boxing to the next leve with these new and improved boxing gloves!",
+      "stock": 100
+    },
+    {
+      "id": 2,
+      "name": "Boxing Bag",
+      "category": "Sports Equipment",
+      "price": 254.99,
+      "description": "Wanna box at home? Get our boxing bag for at home practice and training!",
+      "stock": 50
+    },
+    {
+      "id": 3,
+      "name": "Hand Wraps",
+      "category": "Sports Equipment",
+      "price": 9.99,
+      "description": "Keep your hands wrapped and secure when you box or fight. Comes in multiple colors!",
+      "stock": 75
+    },
+    {
+      "id": 4,
+      "name": "Baseball Bat",
+      "category": "Sports Equipment",
+      "price": 54.99,
+      "description": "Wanna score more homeruns? Buy our baseball bat and step up your game.",
+      "stock": 120
+    },
+    {
+      "id": 5,
+      "name": "Baseball Helment",
+      "category": "Sports Equipment",
+      "price": 39.99,
+      "description": "Keep your head protected when playing a tough game or for when you are having fun in the batting cages!",
+      "stock": 60
+    },
+    {
+      "id": 6,
+      "name": "Exercise Bike",
+      "category": "Gym Equipment",
+      "price": 169.99,
+      "description": "Keep your body healthy and in shape with this exercise bike!",
+      "brand": "PowerUp",
+      "stock": 80
+    },
+    {
+      "id": 7,
+      "name": "Football",
+      "category": "Sports Equipment",
+      "price": 24.99,
+      "description": "Practice at home with a football!",
+      "brand": "SafeGuard",
+      "stock": 30
+    },
+    {
+      "id": 8,
+      "name": "Football Helmet",
+      "category": "Sports Equipment",
+      "price": 59.99,
+      "description": "Protect your head in style with this cool helment. Fits most heads.",
+      "brand": "ExecutiveStyle",
+      "stock": 40
+    },
+    {
+      "id": 9,
+      "name": "Football Pads",
+      "category": "Sports Equipment",
+      "price": 109.99,
+      "description": "Go to practice protected with these cool football pads!",
+      "brand": "SmartHome",
+      "stock": 90
+    },
+    {
+      "id": 10,
+      "name": "Lacrosse Stick",
+      "category": "Sports Equipment",
+      "price": 29.99,
+      "description": "Start your practice right with this lacrosse stick.",
+      "stock": 70
+    },
+    {
+      "id": 11,
+      "name": "Tennis Racquet",
+      "category": "Sports Equipment",
+      "price": 69.99,
+      "description": "Score more points with this tennnis racquet!",
+      "stock": 55
+    },
+    {
+      "id": 12,
+      "name": "12 Pack of Tennis Balls",
+      "category": "Sports Equipment",
+      "price": 34.99,
+      "description": "Lost your tennis balls? Don't worry we have more for you!",
+      "stock": 25
+    },
+    {
+      "id": 13,
+      "name": "Golf Club",
+      "category": "Sports Equipment",
+      "price": 649.99,
+      "description": "Take your golfing to the next level with this golf club",
+      "stock": 35
+    },
+    {
+      "id": 14,
+      "name": "4 Dozen Golf Balls",
+      "category": "Sports Equipment",
+      "price": 164.99,
+      "description": "Want more golf balls? We got them!",
+      "stock": 85
+    },
+    {
+      "id": 15,
+      "name": "Swimming Cap",
+      "category": "Sports Equipment",
+      "price": 19.99,
+      "description": "Want your hair to stay nice and slicked back? We got you with our swimming cap!",
+      "stock": 20
+    },
+    {
+    
+        "id": 16,
+        "name": "Basketball Hoop",
+        "category": "Sports Equipment",
+        "price": 249.99,
+        "description": "Shoot some hoops with this portable AND adjustable basketball hoop. Perfect for a driveway pickup game!",
+        "stock": 75
+      },
+      {
+        "id": 17,
+        "name": "Basketball",
+        "category": "Sports Equipment",
+        "price": 24.99,
+        "description": "Shoot some hoops with this durable basketball suitable for different courts.",
+        "stock": 100
+      },
+      {
+        "id": 18,
+        "name": "Soccer Net",
+        "category": "Sports Equipment",
+        "price": 59.99,
+        "description": "Kick some goals in this portable soccer net. Perfect for your backyard!",
+        "stock": 55
+      },
+      {
+        "id": 19,
+        "name": "Soccer Ball",
+        "category": "Sports Equipment",
+        "price": 24.99,
+        "description": "Kick some goals with this durable soccer ball whether your training or in a match, it doesn't matter! ",
+        "stock": 120
+      },
+      {
+        "id": 20,
+        "name": "Treadmill",
+        "category": "Gym Equipment",
+        "price": 439.99,
+        "description": "Whether you want to walk, jog, or sprint this treadmill is perfect for you!",
+        "stock": 60
+      },
+      {
+        "id": 21,
+        "name": "Shot Put",
+        "category": "Sports Equipment",
+        "price": 59.99,
+        "description": "Add this equipment to your track and field training now!",
+        "stock": 50
+      },
+      {
+        "id": 22,
+        "name": "Hurdle",
+        "category": "Sports Equipment",
+        "price": 74.99,
+        "description": "It won't be a hurdle trying to add this to your cart!",
+        "stock": 30
+      },
+      {
+        "id": 23,
+        "name": "Starting Blocks",
+        "category": "Sports Equipment",
+        "price": 129.99,
+        "description": "Looking to change your starting position? Well you've come to the right place!",
+        "stock": 30
+      },
+      {
+        "id": 24,
+        "name": "Volleyball",
+        "category": "Sports Equipment",
+        "price": 29.99,
+        "description": "Take your volleyball skills to the next level with the assist of this durable volleyball!",
+        "stock": 70
+      },
+      {
+        "id": 25,
+        "name": "Volleyball Knee Pads",
+        "category": "Sports Equipment",
+        "price": 29.99,
+        "description": "Protect your knees with these amazing knee pads designed specifically for protection.",
+        "stock": 40
+      }
+  ]
