@@ -11,3 +11,40 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.Products {
+  padding: 15px;
+  background-color: rgb(123, 186, 207);
+}
+.ProductList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  background-color: rgb(29, 118, 148);
+  width: 170px;
+  height: 280px;
+  padding: 5px;
+  border-color: rgb(80, 139, 139);
+  overflow: auto;
+  margin:10px;
+  background-color: brown;
+  border-radius: 9px;
+}
+
+.item h3{
+  font-size: 17px;
+}
+
+.item h4{
+  font-size: 14px;
+}
+
+.item p{
+  font-size: 10.5px;
+}
+
+.header{
+  width:100%;
+}
