@@ -13,11 +13,24 @@ code {
 }
 
 .Products {
+  display: flex;
   padding: 15px;
   background-color: rgb(123, 186, 207);
+  flex-direction: column;
+  align-items: center;
+}
+.sortbar{
+  display: flex;
+  width: 90%;
+  background-color: rgb(48, 38, 184);
+  border-radius: 8px;
+  flex-direction: row;
+  justify-content: space-between;
+  padding:1px 8px;
 }
 .ProductList {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -48,3 +61,4 @@ code {
 .header{
   width:100%;
 }
+

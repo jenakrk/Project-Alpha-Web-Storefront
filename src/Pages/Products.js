@@ -1,11 +1,17 @@
 import Item from '../Components/Item';
+import SortBar from '../Components/SortBar';
 import '../index.css';
+
 export default function Products(properties) {
+    console.log(properties.items);
+    let maxItems=50;//create use state and add page buttons if you ever have more than 50 items and pass into sortbar
+    let numItems=properties.items.length;
     return (
         <div className='Products'>
             <h1 className='header'>Products</h1>
+            <SortBar numShowing={numItems} numTotal={properties.items.length}/>
             <div className='ProductList'>
-                {properties.items.map(
+                {properties.items.slice(0,maxItems).map(//this would need to be fixed to account for pages of items
                     item => (< Item item={item} key={item.id}/>)
                 )}
             </div>

@@ -5,9 +5,11 @@ import ShoppingCart from './Pages/ShoppingCart';
 import CheckOut from './Pages/CheckOut';
 import MyNav from './myNavbar.js';
 import items from './items.json';
+import {useState} from'react';
 
 function App() {
   //console.log(window.location.pathname);
+  const [cart,setCart]=useState([]);
   let Component;
   switch (window.location.pathname){
     case '/':
@@ -27,7 +29,7 @@ function App() {
   return (
     <div className="App">
       <MyNav />
-      <Component items={items}/>
+      <Component items={items} cart={{"inv":cart,"set":setCart}}/>
     </div>
   );
 }

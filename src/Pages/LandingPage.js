@@ -1,5 +1,5 @@
 export default function LandingPage(properties) {
-    console.log(properties.items[0].id);
+    console.log(properties);
     return (
         <h1>LandingPage</h1>
     )
