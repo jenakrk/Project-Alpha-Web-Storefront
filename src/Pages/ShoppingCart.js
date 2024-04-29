@@ -13,7 +13,7 @@ export default function ShoppingCart(properties) {
         properties.cart.inv.map(cartItem=><CartItem key={cartItem.item.id} cartItem={cartItem} cart={properties.cart}/>)
         :
         <p>Your cart is empty! Add some items to see them here!</p>}
-      <div className="cartTotal">Your cart's current total is ${tot.toFixed(2)}</div>
+      <div className="cartTotal">Your cart's current total is ${tot.toFixed(2)} (without Tax)</div>
     </div>
   )
 }
