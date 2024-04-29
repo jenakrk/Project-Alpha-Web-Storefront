@@ -26,6 +26,7 @@ code {
   border-radius: 8px;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   padding:1px 8px;
 }
 .ProductList {
@@ -62,3 +63,8 @@ code {
   width:100%;
 }
 
+.pageVisulizer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
