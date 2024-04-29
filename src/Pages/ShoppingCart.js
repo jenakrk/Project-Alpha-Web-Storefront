@@ -1,4 +1,5 @@
 import CartItem from "../Components/CartItem";
+import {Button} from "react-bootstrap";
 
 export default function ShoppingCart(properties) {
   //console.log(properties);
@@ -9,11 +10,22 @@ export default function ShoppingCart(properties) {
   return (
     <div className="ShoppingCart">
       <h1>ShoppingCart</h1>
-      {properties.cart.inv.length?
-        properties.cart.inv.map(cartItem=><CartItem key={cartItem.item.id} cartItem={cartItem} cart={properties.cart}/>)
-        :
-        <p>Your cart is empty! Add some items to see them here!</p>}
-      <div className="cartTotal">Your cart's current total is ${tot.toFixed(2)} (without Tax)</div>
+      <div className="ShoppingCartInner">
+        <div className="ShoppingCartList">
+          {properties.cart.inv.length?
+            properties.cart.inv.map(cartItem=><CartItem key={cartItem.item.id} cartItem={cartItem} cart={properties.cart}/>)
+            :
+            <p>Your cart is empty! Add some items to see them here!</p>}
+        </div>
+        <div className="ShoppingTotal">
+          <div className="cartTotal">Your cart's current total is ${tot.toFixed(2)} (without Tax)</div>
+          <Button variant="danger" size="sm" onClick={()=>{
+            properties.cart.inv.forEach(element => {
+              properties.cart.set(element.item,element.quantity);
+            });
+            }}>Clear Cart</Button>
+        </div>  
+      </div>
     </div>
   )
 }

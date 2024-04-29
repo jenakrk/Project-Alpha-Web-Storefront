@@ -33,6 +33,7 @@ function App() {
       //console.log(cart[i].item);
       if (cart[i].item.id===item.id){
         index=i;
+        break;
       }
     }
     if (num>0){

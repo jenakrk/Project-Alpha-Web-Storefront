@@ -92,6 +92,8 @@ code {
   flex-direction: column;
   align-items: center;
   background-color: beige;
+  min-height: 100vh;
+  justify-content:flex-start;
 }
 .CartItem{
   display: flex;
@@ -111,4 +113,21 @@ code {
   padding: 10px;
   border-radius: 9px;
   background-color: rgb(52, 128, 226);
+}
+
+.ShoppingCartInner{
+  display: flex;
+  align-items: stretch;
+}
+
+.ShoppingCartList{
+  background-color: blanchedalmond;
+  flex-direction: column;
+  height:80vh;
+  overflow-y:scroll;
+}
+
+.ShoppingTotal{
+  align-items: flex-start;
+  margin: 20px;
 }
