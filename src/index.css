@@ -68,3 +68,21 @@ code {
   flex-direction: row;
   align-items: center;
 }
+
+.LandingPage{
+  padding: 10px;
+  background-color: chartreuse;
+  height: 100vh;
+}
+
+.hotItems {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hotBar {
+  background-color: orange;
+  border-radius: 9px;
+}
