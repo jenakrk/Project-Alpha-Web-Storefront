@@ -17,13 +17,13 @@ export default function Products(properties) {
             <SortBar numTotal={cat1.length} page={{"pageNum":sportPage,"setPageNum":setSportPage}} cat="Sports Equipment"/>
             <div className='ProductList'>
                 {cat1.slice(10*sportPage,10*(sportPage+1)).map(//this would need to be fixed to account for pages of items
-                    item => (< Item item={item} key={item.id}/>)
+                    item => (< Item item={item} cart={properties.cart} key={item.id}/>)
                 )}
             </div>
             <SortBar numTotal={cat2.length} page={{"pageNum":gymPage,"setPageNum":setGymPage}} cat="Gym Equipment"/>
             <div className='ProductList'>
                 {cat2.slice(10*gymPage,10*(gymPage+1)).map(//this would need to be fixed to account for pages of items
-                    item => (< Item item={item} key={item.id}/>)
+                    item => (< Item item={item} cart={properties.cart} key={item.id}/>)
                 )}
             </div>
         </div>

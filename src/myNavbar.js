@@ -11,10 +11,10 @@ export default class MyNav extends Component {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="/landing">Landing Page</Nav.Link>
-              <Nav.Link href="/products">Products</Nav.Link>
-              <Nav.Link href="/cart">Shopping Cart</Nav.Link>
-              <Nav.Link href="/checkout">Check Out</Nav.Link>
+              <Nav.Link href="landing">Landing Page</Nav.Link>
+              <Nav.Link href="products">Products</Nav.Link>
+              <Nav.Link href="cart">Shopping Cart</Nav.Link>
+              <Nav.Link href="checkout">Check Out</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
