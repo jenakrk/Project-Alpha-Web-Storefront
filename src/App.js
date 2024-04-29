@@ -27,34 +27,40 @@ function App() {
       break;
   }
   function modifyCart(item, num){
-    let index=-1;
-    let newCart=[...cart];
-    for (let i=0; i < cart.length; i++){
-      //console.log(cart[i].item);
-      if (cart[i].item.id===item.id){
-        index=i;
-        break;
-      }
+    let newCart;
+    if (item==="all"){
+      newCart=[];
     }
-    if (num>0){
-      if (index>-1){
-        newCart[index].quantity+=num;
-      }
-      else{
-        newCart.push({"item":item,"quantity":1});
-      }
-    }
-    if (num<0){
-      if (index>-1){
-        if (newCart[index].quantity+num<=0){
-          newCart.splice(index,1);
+    else{
+      let index=-1;
+      newCart=[...cart];
+      for (let i=0; i < cart.length; i++){
+        //console.log(cart[i].item);
+        if (cart[i].item.id===item.id){
+          index=i;
+          break;
         }
-        else{
+      }
+      if (num>0){
+        if (index>-1){
           newCart[index].quantity+=num;
         }
+        else{
+          newCart.push({"item":item,"quantity":1});
+        }
       }
+      if (num<0){
+        if (index>-1){
+          if (newCart[index].quantity+num<=0){
+            newCart.splice(index,1);
+          }
+          else{
+            newCart[index].quantity+=num;
+          }
+        }
+      }
+      //console.log(newCart);
     }
-    //console.log(newCart);
     setCart(newCart);
     sessionStorage.setItem("cart", JSON.stringify(newCart));
     //console.log("hi");

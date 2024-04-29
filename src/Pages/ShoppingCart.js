@@ -20,8 +20,9 @@ export default function ShoppingCart(properties) {
         <div className="ShoppingTotal">
           <div className="cartTotal">Your cart's current total is ${tot.toFixed(2)} (without Tax)</div>
           <Button variant="danger" size="sm" onClick={()=>{
+            //console.log(properties.cart.inv);
             properties.cart.inv.forEach(element => {
-              properties.cart.set(element.item,element.quantity);
+              properties.cart.set("all",0);
             });
             }}>Clear Cart</Button>
         </div>  
