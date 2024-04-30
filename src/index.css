@@ -181,7 +181,8 @@ code {
   width:100%;
 }
 .invoiceBodyTopRowItem{
-  max-width:45%;
+  max-width:47.5%;
+  
 }
 .invoiceBodyMiddle{
   display: flex;
