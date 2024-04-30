@@ -107,17 +107,42 @@ export default function CheckOut(props) {
                     <div className="invoiceBody">
                         <div className="invoiceBodyTop">
                             <div className="invoiceBodyTopRow">
-                                <h5>Recipient: {document.getElementById("RN")?document.getElementById("RN").value:''}</h5>
-                                <h5>Invoice No. {Math.floor(Math.random()*(98760-12345)+12345)}</h5>
+                                <h5 className="invoiceBodyTopRowItem">Recipient: {document.getElementById("RN")?document.getElementById("RN").value:''}</h5>
+                                <h5 className="invoiceBodyTopRowItem">Invoice No. {Math.floor(Math.random()*(98760-12345)+12345)}</h5>
                             </div>
                             <div className="invoiceBodyTopRow">
-                                <h4>{document.getElementById("BA1")?document.getElementById("BA1").value:''}<br/>{document.getElementById("BA2")?document.getElementById("BA2").value:''}</h4>
-                                <h5>{Date().substring(0,21)}</h5>
+                                <h4 className="invoiceBodyTopRowItem">{document.getElementById("BA1")?document.getElementById("BA1").value:''}<br/>{document.getElementById("BA2")?document.getElementById("BA2").value:''}</h4>
+                                <h5 className="invoiceBodyTopRowItem">{Date().substring(0,21)}</h5>
                             </div>
                             
                         </div>
                         <div className="invoiceBodyMiddle">
-                            <h4>grid of expenses</h4>
+                            <div className="invoiceBodyMiddleRow">
+                                <h5>Item &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h5>
+                                <h5>Price</h5>
+                                <h5>Quantity</h5>
+                                <h5>Total</h5>
+                            </div>
+                            {props.cart.inv.map(cartItem=><div 
+                            key={cartItem.item.id}
+                            className="invoiceBodyMiddleRow">
+                                <p className="invoiceBodyMiddleRowItem">{cartItem.item.name}</p>
+                                <p className="invoiceBodyMiddleRowItem">{cartItem.item.price}</p>
+                                <p className="invoiceBodyMiddleRowItem">{cartItem.quantity}</p>
+                                <p className="invoiceBodyMiddleRowItem">{(cartItem.item.price*cartItem.quantity).toFixed(2)}</p>
+                            </div>)}
+                            <div className="invoiceBodyMiddleRow">
+                                <h5>Tax</h5>
+                                <h5>&nbsp;</h5>
+                                <h5>&nbsp;</h5>
+                                <h5>{(total*.06).toFixed(2)}</h5>
+                            </div>
+                            <div className="invoiceBodyMiddleRow">
+                                <h5>Total</h5>
+                                <h5>&nbsp;</h5>
+                                <h5>&nbsp;</h5>
+                                <h5>{(total*1.06).toFixed(2)}</h5>
+                            </div>
                         </div>
                         <div className="invoiceBodyBottom">
                             <h5>{getPayInfo()}</h5>
