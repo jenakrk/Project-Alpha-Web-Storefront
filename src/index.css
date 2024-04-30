@@ -104,7 +104,7 @@ code {
   border-radius: 9px;
   background-color: rgb(20, 168, 168);
   margin:10px;
-  width: 500px;
+  width: 350px;
 }
 .cartRow{
   display: flex;
@@ -125,6 +125,7 @@ code {
   flex-direction: column;
   height:80vh;
   overflow-y:scroll;
+  border-radius: 9px;
 }
 
 .ShoppingTotal{
@@ -152,6 +153,7 @@ code {
   padding:10px;
   padding:10px;
   background-color: antiquewhite;
+  border-radius: 9px;
 }
 .checkOutForms{
   display: flex;
