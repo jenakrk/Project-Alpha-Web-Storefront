@@ -7,7 +7,7 @@ export default class MyNav extends Component {
     return (
       <Navbar bg="light" expand="lg" sticky="top" variant="light">
         <Container>
-          <Navbar.Brand href="http://www.staggeringbeauty.com">Store!</Navbar.Brand>
+          <Navbar.Brand href="about">JNN Gym Store!</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">

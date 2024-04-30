@@ -3,7 +3,7 @@ import LandingPage from './Pages/LandingPage';
 import Products from './Pages/Products';
 import ShoppingCart from './Pages/ShoppingCart';
 import CheckOut from './Pages/CheckOut';
-import MyNav from './myNavbar.js';
+import MyNav from './Components/myNavbar.js';
 import items from './items.json';
 import {useState} from'react';
 
@@ -13,6 +13,7 @@ function App() {
   let Component;
   switch (window.location.pathname){
     case '/':
+    case '/about':
     case '/landing':
       Component=LandingPage
       break;
