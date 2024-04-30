@@ -11,3 +11,204 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.Products {
+  display: flex;
+  padding: 15px;
+  background-color: rgb(123, 186, 207);
+  flex-direction: column;
+  align-items: center;
+}
+.sortbar{
+  display: flex;
+  width: 90%;
+  background-color: rgb(48, 38, 184);
+  border-radius: 8px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding:1px 8px;
+}
+.ProductList {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.item {
+  background-color: rgb(29, 118, 148);
+  width: 170px;
+  height: 280px;
+  padding: 5px;
+  border-color: rgb(80, 139, 139);
+  overflow: auto;
+  margin:10px;
+  background-color: brown;
+  border-radius: 9px;
+}
+
+.item h3{
+  font-size: 17px;
+}
+
+.item h4{
+  font-size: 14px;
+}
+
+.item p{
+  font-size: 10.5px;
+}
+
+.header{
+  width:100%;
+}
+
+.pageVisulizer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.LandingPage{
+  padding: 10px;
+  background-color: rgb(lightgrey);
+  height: 100vh;
+}
+
+.hotItems {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hotBar {
+  background-color: rgb(250, 184, 61);
+  border-radius: 9px;
+}
+
+.ShoppingCart{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: beige;
+  min-height: 100vh;
+  justify-content:flex-start;
+}
+.CartItem{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 10px;
+  border-radius: 9px;
+  background-color: rgb(20, 168, 168);
+  margin:10px;
+  width: 500px;
+}
+.cartRow{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 9px;
+  background-color: rgb(52, 128, 226);
+}
+
+.ShoppingCartInner{
+  display: flex;
+  align-items: stretch;
+}
+
+.ShoppingCartList{
+  background-color: blanchedalmond;
+  flex-direction: column;
+  height:80vh;
+  overflow-y:scroll;
+}
+
+.ShoppingTotal{
+  align-items: flex-start;
+  margin: 20px;
+}
+
+.checkOut{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px;
+  background-color: rgb(165, 243, 176);
+  min-height:100vh;
+}
+.checkOutInner{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.checkOutReceipt{
+  display: flex;
+  flex-direction: column;
+  padding:10px;
+  padding:10px;
+  background-color: antiquewhite;
+}
+.checkOutForms{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding:10px;
+  margin:10px;
+}
+
+.invoiceBody{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  background-color: white;
+  width:100%;
+}
+.invoiceBodyTop{
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  width:100%;
+}
+.invoiceBodyTopRow{
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+  width:100%;
+}
+.invoiceBodyTopRowItem{
+  max-width:47.5%;
+  
+}
+.invoiceBodyMiddle{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.invoiceBodyBottom{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.invoiceBodyMiddle{
+  display: flex;
+  flex-direction: column;
+  justify-items: space-between;
+  width:100%;
+}
+
+.invoiceBodyMiddleRow{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width:100%;
+}
+
+.invoiceBodyMiddleRowItem{
+  max-width:20%;
+}
