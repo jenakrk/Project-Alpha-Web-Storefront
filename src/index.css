@@ -15,14 +15,14 @@ code {
 .Products {
   display: flex;
   padding: 15px;
-  background-color: rgb(123, 186, 207);
+  background-color: #669EC0;
   flex-direction: column;
   align-items: center;
 }
 .sortbar{
   display: flex;
   width: 90%;
-  background-color: rgb(48, 38, 184);
+  background-color: rgb(152, 202, 233);
   border-radius: 8px;
   flex-direction: row;
   justify-content: space-between;
@@ -43,7 +43,7 @@ code {
   border-color: rgb(80, 139, 139);
   overflow: auto;
   margin:10px;
-  background-color: brown;
+  background-color: #F7FDFF;
   border-radius: 9px;
 }
 
@@ -71,7 +71,7 @@ code {
 
 .LandingPage{
   padding: 10px;
-  background-color: rgb(lightgrey);
+  background-color: #669EC0;
   height: 100vh;
 }
 
@@ -83,7 +83,7 @@ code {
 }
 
 .hotBar {
-  background-color: rgb(250, 184, 61);
+  background-color: #ed37a1;
   border-radius: 9px;
 }
 
@@ -91,7 +91,7 @@ code {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: beige;
+  background-color: #669EC0;
   min-height: 100vh;
   justify-content:flex-start;
 }
@@ -121,7 +121,7 @@ code {
 }
 
 .ShoppingCartList{
-  background-color: blanchedalmond;
+  background-color: antiquewhite;
   flex-direction: column;
   height:80vh;
   overflow-y:scroll;
@@ -139,7 +139,7 @@ code {
   align-items: center;
   justify-content: flex-start;
   padding: 10px;
-  background-color: rgb(165, 243, 176);
+  background-color: #669EC0;
   min-height:100vh;
 }
 .checkOutInner{
@@ -167,7 +167,7 @@ code {
   display: flex;
   flex-direction: column;
   align-content: center;
-  background-color: white;
+  background-color: antiquewhite;
   width:100%;
 }
 .invoiceBodyTop{
@@ -184,7 +184,6 @@ code {
 }
 .invoiceBodyTopRowItem{
   max-width:47.5%;
-  
 }
 .invoiceBodyMiddle{
   display: flex;
